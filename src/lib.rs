@@ -1,8 +1,10 @@
 pub trait Hhmmss {
+    /// Provides tuple of seconds and nano seconds
     fn sms(&self) -> (i64, i64);
+    
     /// Pretty-prints a chrono::Duration in the form `HH:MM:SS.xxx`
     fn hhmmss(&self) -> String {
-        let (s, _ms) = self.sms();
+        let (s, _ns) = self.sms();
         s2hhmmss(s)
     }
     /// Pretty-prints a chrono::Duration in the form `HH:MM:SS.xxx` using milli second resolution
