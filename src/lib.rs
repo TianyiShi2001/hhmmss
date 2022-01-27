@@ -2,7 +2,7 @@ pub trait Hhmmss {
     fn sms(&self) -> (i64, i64);
     /// Pretty-prints a chrono::Duration in the form `HH:MM:SS.xxx`
     fn hhmmss(&self) -> String {
-        let (s, ms) = self.sms();
+        let (s, _ms) = self.sms();
         s2hhmmss(s)
     }
     /// Pretty-prints a chrono::Duration in the form `HH:MM:SS.xxx`
