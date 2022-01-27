@@ -11,4 +11,4 @@ repository = "https://github.com/TianyiShi2001/hhmmss"
 
 [dependencies]
 chrono = "0.4"
-time = "0.2"
+time = "0.3"
