@@ -6,7 +6,7 @@ Format time and duration in chrono, std::time and time as `HH:MM:SS` or `HH:MM:S
 
 I just wanted to format `chrono::Duration` as `HH:MM:SS` in some of my crates. However there isn't a ready-to-use method for this. Format is only supported for instances. Neither `time` nor `std::time`'s `Duration` support this. So I made this crate, mainly for my own convinience.
 
-# Usage
+## Usage
 
 Add `hhmmss` to `Cargo.toml`:
 
@@ -32,3 +32,7 @@ fn main() {
     assert_eq!(&time_duration.hhmmssxxx(), "01:01:01.534");
 }
 ```
+
+## License
+
+This project is licensed under the MIT license.
